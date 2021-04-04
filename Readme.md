@@ -47,3 +47,24 @@ Através do log também é possível ver a mudança feita através da href:
 # git show {rest}
 
 <!--diff-->
+Esse comando é usado para ver as mudanças feitas em um arquivo antes de adicioná-lo
+# git diff
+
+<!--Desfazendo coisas-->
+Para remover a mudança feita em um arquivo que ainda não foi adicionado basta:
+# git checkout {nome do arquivo}
+
+<!--reset-->
+<!--Para realizar um reset é necessário usar a ref de um commit anterior ao desejado-->
+Após ter alterado o arquivo e adicionado ele ao staged, é possível retirá-lo para que as mudanças possam ser desfeitas
+# git reset HEAD {nome do arquivo}
+
+Para desfazer um commit e retornar o arquivo para o staged, estando pronto para ser commitado de novo, e não sendo possível mudar a alteração:
+# git reset --soft {ref}
+
+Para desfazer um commit e retornar o arquivo para o estado de 'modified', onde é possível alterar a mudança feita:
+# git reset --mixed {ref}
+
+Para desfazer um commit e as duas mudanças:
+# git reset --hard {ref}
+
