@@ -29,3 +29,16 @@ Para adicionar esse arquivo ao repositório Git basta executar este comando:
 
 Para salvar uma versão do documento no repositório Git basta:
 # git commit -m "{nome da versão do documento}"
+
+
+Para visualizar os commits feitos no Git basta realizar o comando: 
+# git log
+
+É possível filtrar os commits pelo autor:
+# git log --author = "{nome do autor}"
+
+É possível também organizar os commits pelos autores e pela ordem alfabética:
+# git shortlog
+
+Através do log também é possível ver a mudança feita através da href:
+# git show {rest}
