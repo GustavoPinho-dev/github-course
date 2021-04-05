@@ -33,6 +33,9 @@ Para adicionar esse arquivo ao repositório Git basta executar este comando:
 Para salvar uma versão do documento no repositório Git basta:
 # git commit -m "{nome da versão do documento}"
 
+Para adicionar o arquivo e dar commit nele em apenas um comando:
+# git commit -am "{nome da versão do documento}"
+
 <!--log-->
 Para visualizar os commits feitos no Git basta realizar o comando: 
 # git log
@@ -67,4 +70,12 @@ Para desfazer um commit e retornar o arquivo para o estado de 'modified', onde �
 
 Para desfazer um commit e as duas mudanças:
 # git reset --hard {ref}
+
+
+<!--GitHub-->
+Primeiramente é adicionado o endereço do repositório remoto do GitHub
+# git remote add origin {endereço web do repositório}
+
+Depois é enviado os arquivos do branch para o repositório
+# git push -u origin master
 
