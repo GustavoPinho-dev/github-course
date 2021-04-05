@@ -80,5 +80,5 @@ Depois é enviado os arquivos do branch para o repositório
 # git push -u origin master
 
 Para clonar repositórios remotos e criar uma cópia em sua máquina:
-# g clone {endereço HTTP ou SSH}
+# g clone {endereço HTTP ou SSH} {nome da pasta clonada}
 
