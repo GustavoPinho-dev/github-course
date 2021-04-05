@@ -79,3 +79,6 @@ Primeiramente é adicionado o endereço do repositório remoto do GitHub
 Depois é enviado os arquivos do branch para o repositório
 # git push -u origin master
 
+Para clonar repositórios remotos e criar uma cópia em sua máquina:
+# g clone {endereço HTTP ou SSH}
+
